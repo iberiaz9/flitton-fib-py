@@ -1,5 +1,3 @@
-import pathlib
-
 from setuptools import find_packages, setup
 
 
@@ -7,26 +5,16 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
-with open("version.py", "r") as fh:
-    version = fh.read().split("=")[1].replace("'", "")
-
-
 setup(
-    name="ja_fib_py",
-    version=version,
+    name="flitton_fib_py",
+    version="0.0.1",
     author="Jose Alvarado",
     author_email="alvarado.ja53@gmail.com",
     description="Calculates a Fibonacci number",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/iberiaz9/flitton-fib-py",
-    install_requires=[
-        "PyYAML>=4.1.2",
-        "dill>=0.2.8"
-    ],
-    extras_require={
-     'server': ["Flask>=1.0.0"]
-    },
+    install_requires=[],
     packages=find_packages(exclude=("tests",)),
     classifiers=[
         "Development Status :: 4 - Beta",

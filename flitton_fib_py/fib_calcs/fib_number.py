@@ -1,7 +1,7 @@
-# forcing a build
+from typing import Optional
 
 
-def recurring_fibonacci_number(number: int) -> int:
+def recurring_fibonacci_number(number: int) -> Optional[int]:
     """
     Calculates the fibonacci number needed.
 
@@ -9,7 +9,7 @@ def recurring_fibonacci_number(number: int) -> int:
     :return: (Optional[int]) the calculated fibonacci number
     """
     if number < 0:
-        raise ValueError("Fibonacci has to be equal or above zero")
+        return None
     elif number <= 1:
         return number
     else:
