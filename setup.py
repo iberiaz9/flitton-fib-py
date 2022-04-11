@@ -7,8 +7,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
-with open(str(pathlib.Path(__file__).parent.absolute()) +
-          "/flitton_fib_py/version.py", "r") as fh:
+with open("version.py", "r") as fh:
     version = fh.read().split("=")[1].replace("'", "")
 
 
