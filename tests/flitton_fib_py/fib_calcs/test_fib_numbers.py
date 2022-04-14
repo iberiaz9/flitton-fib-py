@@ -1,12 +1,14 @@
 from unittest import main, TestCase
 from unittest.mock import patch
 
-from flitton_fib_py.fib_calcs.fib_numbers import calculate_numbers
+from flitton_fib_py.fib_calcs.fib_numbers \
+    import calculate_numbers
 
 
 class Test(TestCase):
 
-    @patch("flitton_fib_py.fib_calcs.fib_numbers.recurring_fibonacci_number")
+    @patch("flitton_fib_py.fib_calcs.fib_numbers."
+           "recurring_fibonacci_number")
     def test_calculate_numbers(self, mock_fib_calc):
         expected_outcome = [mock_fib_calc.return_value,
                             mock_fib_calc.return_value]
