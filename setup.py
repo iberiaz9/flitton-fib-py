@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 
 setup(
-    name="flitton_fib_py",
+    name="ja_fib_py",
     version="0.0.1",
     author="Jose Alvarado",
     author_email="alvarado.ja53@gmail.com",
