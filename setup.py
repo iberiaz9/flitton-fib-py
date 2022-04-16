@@ -7,20 +7,19 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
-with open(str(pathlib.Path(__file__).parent.absolute()) +
-          "/flitton_fib_py/version.py", "r") as fh:
+with open(str(pathlib.Path(__file__).parent.absolute()) + "/flitton_fib_py/version.py", "r") as fh:
     version = fh.read().split("=")[1].replace("'", "")
 
 
 setup(
-    name="flitton_fib_py",
+    name="ja_fib_py",
     version=version,
-    author="Maxwell Flitton",
+    author="Jose Alvarado",
     author_email="maxwell@gmail.com",
     description="Calculates a Fibonacci number",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/maxwellflitton/flitton-fib-py",
+    url="https://github.com/iberiaz9/flitton-fib-py",
     install_requires=[
         "PyYAML>=4.1.2",
         "dill>=0.2.8"
