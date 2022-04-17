@@ -1,7 +1,6 @@
 import os
 import pathlib
 from typing import Tuple, List, Union
-
 import requests
 
 
