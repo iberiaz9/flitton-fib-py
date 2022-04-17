@@ -15,7 +15,7 @@ setup(
     name="ja_fib_py",
     version=version,
     author="Jose Alvarado",
-    author_email="maxwell@gmail.com",
+    author_email="alvarado.ja53@gmail.com",
     description="Calculates a Fibonacci number",
     long_description=long_description,
     long_description_content_type="text/markdown",
